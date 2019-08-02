@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2D</title>
+	<style>
+		div{
+			margin: 50px auto;
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			border: 2px solid black;
+			text-align: center;
+		}
+		#rotate{
+			transform: rotate(45deg);
+		}/*负值逆时针*/
+		#scale:hover{
+			transform: scale(1.5,0.8);
+		}/*水平垂直伸缩倍数*/
+	</style>
+</head>
+<body>
+	<div></div>
+	<div id="rotate">2d旋转45°</div>
+	<div id="scale">悬停伸缩</div>
+</body>
+</html>

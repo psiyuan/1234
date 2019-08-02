@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盒子模型</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/*浏览器默认设置清零*/
+		#box{
+			width: 100px;
+			height: 100px;
+			border: 1px solid;/*边框*/
+			padding: 20px;/*内边距*/
+			margin: 10px 20px 30px 40px;/*外边距*/
+			/*上右下左顺时针*/
+			/*margin的合并：垂直方向合并，水平方向不合并，以大者为准*/
+		}
+		.line{
+			height: 1px;
+			width: 500px;
+			border-top: 1px solid red;
+			/*border-width: 1px;
+			border-style: solid;			border-color: red;*/
+		}
+		#newsimglist{
+			text-align: center;
+			font-size: 0;/*图间有默认空隙*/
+			margin: 0 auto;
+			/*div自动计算水平居中，以外层盒子为准*/
+		}
+		#newsimglist img{
+			height: 200px;
+			width: 200px;
+			margin:50px;
+			border:5px solid red;
+			padding: 25px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="line"></div>
+	<!-- 利用border属性做水平分割线 -->
+
+	<div style=
+			"height: 10px;
+			width: 500px;
+			border-top: 10px dashed;">
+	</div>
+
+	<div style=
+			"height: 10px;
+			width: 500px;
+			border-top:10px dotted;">
+	</div>
+
+	<div style=
+			"height: 10px;
+			width: 500px;
+			border-top:10px double;">
+	</div>
+<br>
+	<div id="newsimglist">
+		<img src="images/newsimg.png">
+		<img src="images/newsimg.png">
+		<img src="images/newsimg.png">
+	</div>
+	<div id="box" style="overflow: hidden;">
+		<!-- 隐藏超出部分 -->
+		content,content,content,content,content,
+		content,content,content,content,content,
+		content,content,content,content,content,
+		content,content,content,content,content,
+	</div>
+	<div id="box" style="overflow: auto;">
+		<!-- 如果有超出部分显示滚动条 -->
+		content,content,content,content,content,
+		content,content,content,content,content,
+		content,content,content,content,content,
+		content,content,content,content,content,
+	</div>
+	<div id="box" style="overflow: scroll;">
+		<!-- 显示滚动条 -->
+		content,content,content,content,content,
+		content,content,content,content,content,
+		content,content,content,content,content,
+		content,content,content,content,content,
+	</div>
+</body>
+</html>

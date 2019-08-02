@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动定位</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			font-size: 14px;
+
+		}
+		#container{
+			margin: 0 auto;
+			width: 1000px;
+			height: 500px;
+		}
+		#header{
+			height:100px;
+			background-color:#6cf;
+			margin-bottom: 10px; 
+		}
+		#main{
+			height: 150px;
+			/*background-color: #cff;*/
+			margin-bottom: 10px;
+		}
+		#footer{
+			height: 50px;
+			background-color: #6cc;
+		}
+		#aside{
+			height: 150px;
+			float: left;
+			width: 200px;
+			background-color: #5cc;
+			margin-top: 5px;
+		}
+		#content{
+			float: right;
+			width: 790px;
+			height: 150px;
+			background-color: #cff;
+			margin-top: 5px;
+		}
+		#side{
+			height: 150px;
+			float: left;
+			width: 200px;
+			background-color: #5cc;
+			margin-top: 5px;
+			margin-left: 5px;
+		}
+		#content2{
+			float: left;
+			width: 580px;
+			height: 150px;
+			background-color: #cff;
+			margin-top: 5px;
+			margin-left: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header"></div>
+		<div id="main">
+			<div id="aside"></div>
+			<div id="content"></div>
+		</div>
+		<div id="footer"></div>
+		<div id="main">
+			<div id="side"></div>
+			<div id="content2"></div>
+			<div id="side"></div>
+		</div>
+	</div>
+</body>
+</html>
