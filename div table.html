@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>div</title>
+	<style>
+		table{
+			width: 200px;
+			height: 100px;
+		}
+		/*表格大小*/
+		table,td,th{
+			border: 1px solid red;
+		}
+		/*表格边框*/
+		table{
+			border-collapse: collapse;
+		}
+		/*边框合并属性*/
+		th{
+			background-color: blue;
+			color: white;
+		}
+		/*表头属性*/
+		
+		/*.alt{
+			color:red;
+			background-color:white;
+		}*/
+		/*隔行属性可以用选择器直接设置*/
+
+		tr:nth-child(even)/*odd为奇，even为偶*/
+		{
+			color:red;
+			background-color:yellow;
+		}
+		/*奇偶选择器*/
+		/*tr的父元素table的偶数个子元素，不管这些子元素是tr还是th，所以第一个child从第一行th这个子元素开始计数*/
+	</style>
+</head>
+<body>
+	<div id="container" align="center">
+		<div id="nav">
+			<p>将进酒</p>
+		</div>
+		<hr />
+		<div id="content">
+			<P>上标<sup>1</sup></P>
+		</div>
+		<hr />
+		<div id="exp">
+			<p>注释</p>
+		</div>
+	</div>
+	
+	<table>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+	</table>
+
+<br />
+
+	<table>
+		<tr>
+			<th>class</th>
+			<th>score</th>
+			<th>human</th>
+		</tr>
+		<tr class="alt">
+			<th>one</th>
+			<td>90</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<th>two</th>
+			<td>85</td>
+			<td>54</td>
+		</tr>
+		<tr class="alt">
+			<th>three</th>
+			<td>86</td>	
+			<td>45</td>
+		</tr>
+	</table>
+</body>
+</html>

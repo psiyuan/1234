@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>层定位</title>
+	<style>
+		#container{
+			width: 1000px;
+			height: 1500px;
+			background-color: #ccc;
+			margin: 10px auto;
+			border: 2px solid red;
+		}
+		#fixbox1{
+			position: fixed;
+			left:30px;
+			top: 30px;
+			border:5px solid red;
+		}
+		#fixbox2{
+			position: fixed;
+			right: 30px;
+			top: 30px;
+			border:5px solid blue;
+		}
+		#relative{
+			width: 800px;
+			height: 100px;
+			position: relative;
+			top: 20px;
+			left: 20px;
+			background-color: blue;
+			margin: 10px auto;
+		}
+		#absolute{
+			width: 800px;
+			height: 100px;
+			position: absolute;
+			top: 5px;
+			left: 0px;
+			background-color: yellow;
+		}
+		#box1{
+			width: 170px;
+			height: 190px;
+			position: relative;
+			border: 1px solid green;
+		}
+		#box2{
+			width: 98%;
+			position: absolute;
+			bottom:0;
+			color: white;
+		}
+		#box3{
+			width: 50%;
+			position: absolute;
+			bottom: -100px;
+			right: -50px;
+			color: white;
+		}
+		/*absolute的取值可以为负值*/
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="fixbox1">
+			<img src="images/1.jpg" alt="">
+		</div>
+		<div id="fixbox2">
+			<img src="images/2.jpg" alt="">
+		</div>
+		<!-- 固定定位：相对于浏览器窗口进行定位 -->
+
+		<div id="relative"><!-- relative脱离文档流，但在流中的原位置依然存在 -->
+			<div id="absolute"></div>
+			<!-- 对于absolute定位的层总是相对于其最近的定义为absolute或relative的父层 -->，
+		</div>
+		
+		<div id="absolute"></div>
+		<!-- 如果其父层都未定义absolute或 relative，则其将相对body进行定位 -->
+
+		<div id="box1">
+			<img src="images/2.jpg" alt="">
+			<div id="box2">是一行文字哈哈哈哈哈哈哈哈哈</div>
+			<div id="box3"><img src="images/1.jpg" alt=""></div>
+		</div>
+		<!-- relative+absolute -->
+	</div>
+</body>
+</html>

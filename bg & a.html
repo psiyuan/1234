@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bg & a</title>
+<style>
+	#bg{height: 30px;
+		background:url('images/bg1.gif') ;
+		background-repeat: repeat-x;
+		text-align: center;
+		line-height: 30px;/*垂直居中对齐*/
+		}
+
+	#a{
+		text-align:left;
+		font-size:14px;
+		}
+	a:link {
+		color: #09f;/*浅蓝*/
+		text-decoration: none;
+	}
+	a:visited {
+		text-decoration: none;
+		color: #930;/*红*/
+	}
+	a:hover {
+		text-decoration: underline;
+		color: #03c;/*深蓝*/
+	}
+	a:active {
+		text-decoration: none;
+		color: #03c;/*深蓝*/
+		font-size: 150%;
+	}
+</style>
+</head>
+<body>
+	<div id="bg">
+		<p>标题内容</p>
+	</div>
+	<div id="a">
+		<P><a href="#">news_one</a></P>
+		<P><a href="#">news_two</a></P>
+		<P><a href="#">news_three</a></P>
+	</div>
+</body>
+</html>

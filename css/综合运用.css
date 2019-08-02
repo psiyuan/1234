@@ -1,0 +1,126 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#container{
+	width: 900px;
+	margin: 0 auto;
+}
+#header{
+	height: 220px;
+	margin-bottom: 5px;
+	position: relative;
+}
+#icon{
+	position: absolute;
+	bottom: 20px;
+	right: 29px;
+}
+#icon img{
+	margin-left: 5px;
+	
+}
+#nav{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	letter-spacing: 2px;
+	background:#09c;
+	margin-bottom: 5px; 
+
+
+}
+#nav a{
+	text-decoration: none;
+	margin: 10px;
+	font-size: 28px;
+
+}
+a:link{
+	color: #09f;
+}
+a:visited{
+	color: #930;
+	text-decoration: overline;
+}
+a:hover{
+	color: #03c;
+	text-decoration: underline;
+}
+a:active{
+	color: red;
+}
+#main{
+	background-color: #fff;
+}
+#aside{
+	width: 300px;
+	height: 700px;
+	float: left;
+	background-color: pink;
+}
+#aside h2{
+	margin: 20px;
+}
+#imglist{
+	margin: 30px auto;
+
+}
+.pol{
+	width: 85px;
+	padding: 20px;
+	background-color: #eee;
+	border: 1px solid blue;
+	box-shadow: 2px 2px 4px #aaa;
+	border-radius: 7px;
+	margin: 10px auto;
+
+}
+.left{
+	transform: rotate(-7deg);
+}
+.right{
+	transform: rotate(7deg);
+}
+#imglist img:hover{
+	transform: scale(1.4);
+}
+#imglist img{
+	height: 95px;
+	width: 85px;
+	margin: 0 auto;
+	font-size: 0;
+}
+#content{
+	width: 595px;
+	float: right;
+	background-color: blue;
+}
+.tuwen{
+	width: 570px;
+	margin: 10px auto;
+	float: left;
+	
+}
+.tuwen img{
+	float: left;
+	margin: 5px;
+	border: 1px dashed red;
+}
+.t{
+	float: left;
+}
+.t h1{
+	margin: 5px;
+}
+.t p{	
+	font:16px/2em 微软雅黑;
+}
+#footer{
+	height: 60px;
+	line-height: 60px;
+	font-size: 30px;
+	background: #6cf;
+	clear: both;
+	text-align: center;
+}

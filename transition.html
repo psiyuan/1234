@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>transition</title>
+	<style>
+		div{
+			margin: 50px auto;
+			text-align: center;
+			height: 30px;
+			width: 100px;
+			line-height: 30px;
+			border-radius: 5px;
+			color: white;
+			background-color: silver;
+			transition: all 1s linear;
+			/*transition-property: all;
+			transition-duration: 1s;
+			transition-timing-function: linear;*/
+			/*linear  匀速
+			ease  慢快慢
+			ease-in  慢快
+			ease-out  快慢
+			ease-in-out  慢快慢*/
+
+		}
+		div:hover{
+			color:red;
+			background-color: blue;
+			animation: mycolor 5s linear;
+		}
+		
+		@keyframes mycolor
+		{
+			0%{background-color: red;}
+			50%{background-color: blue;}
+			100%{background-color: yellow;}
+		}/*定义动画名称 关键帧*/
+	</style>
+</head>
+<body>
+	<div>transition</div>
+	<div></div>
+</body>
+</html>
